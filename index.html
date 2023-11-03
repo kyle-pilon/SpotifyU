@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Spotify Web API Demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous">
+        <link href="index.css" rel="stylesheet">
+        <script src="./app.js"></script>
+    </head>
+
+    <body onload="clearCache()">
+        <h1><i class="fa fa-spotify"
+                style="font-size:90px;color:green;margin-right:5%;"></i>Spotify<span>U</span><i
+                class="fa fa-spotify" style="font-size:90px;color:green"></i></h1>
+        <button onclick="requestAuthorization()" class="btn btn-success
+            login-button">Log in
+            with Spotify</button>
+    </body>
+
+</html>

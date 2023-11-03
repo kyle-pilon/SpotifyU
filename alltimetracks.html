@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet">
+        <title>All Time Played</title>
+        <link rel="stylesheet" href="./alltimetracks.css">
+        <script src="./app.js"></script>
+    </head>
+    <body onload="onPageLoad(); fetchTopTracks4Weeks(); fetchTopTracks6Months();
+        fetchTopTracksAllTime(); fetchProfile()">
+        <header class="site-header">
+            <div class="site-identity">
+                <h1><a href="home.html">SPOTIFY<span>U</span></a></h1>
+            </div>
+            <nav class="site-navigation">
+                <ul class="nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="recently_played.html">Recently Played</a></li>
+                    <li><a href="alltimetracks.html">Top Tracks</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li>----</li>
+                    <div class="action" id="account-menu">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <h2>Top Tracks</h2>
+
+        <div class="tab">
+            <button class="tablinks" id="open" onclick="openCity(event,
+                'fourweeks')">Last 4 Weeks</button>
+            <button class="tablinks" onclick="openCity(event, 'sixmonths')">Last
+                6 Months</button>
+            <button class="tablinks" onclick="openCity(event, 'alltime')">All
+                Time</button>
+        </div>
+
+        <div id="fourweeks" class="tabcontent">
+            <table class="table-class" id="four-weeks-table">
+                <tr>
+                    <th>Track Title</th>
+                    <th>Artist</th>
+                    <th>Spotify</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="sixmonths" class="tabcontent">
+            <table class="table-class" id="six-months-table">
+                <tr>
+                    <th>Track Title</th>
+                    <th>Artist</th>
+                    <th>Spotify</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="alltime" class="tabcontent">
+            <table class="table-class" id="all-time-table">
+                <tr>
+                    <th>Track Title</th>
+                    <th>Artist</th>
+                    <th>Spotify</th>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+        
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("open").click();
+        </script>
+        <script>
+            function menuToggle(){
+                const toggleMenu = document.querySelector('.menu');
+                toggleMenu.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>

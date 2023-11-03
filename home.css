@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+body {
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin: 0;
+    background-color: rgb(141, 141, 141);
+}
+h1 a{
+  font-size:xx-large; 
+  font-family: 'Mochiy Pop One', sans-serif;
+  margin-left: 8%;
+}
+
+h1 a span{ 
+  font-size:xx-large; 
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #000000;
+}
+
+.jumbotron h1 {
+  color: white;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.jumbotron p {
+  color: #02a302;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.jumbotron h1 span{
+  color: white;
+  font-family: 'Paytone One', sans-serif;
+}
+.jumbotron h1 span span{
+  color: #02a302;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.jumbotron{
+  background-color: rgb(46, 46, 46);
+}
+
+h2{
+  color: #02a302;
+  font-family: 'DM Serif Text', serif;
+
+}
+h3{
+  color:#02a302;
+  font-family: 'DM Serif Text', serif;
+
+}
+p{
+  color: #02a302;
+  font-family: 'DM Serif Text', serif;
+
+}
+
+li {
+  color: #02a302;
+  font-family: 'DM Serif Text', serif;
+
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+a:hover {
+    color: rgb(0, 208, 255);
+}
+
+a:hover span{
+  color: rgb(0, 208, 255);
+}
+
+
+.icons-size{
+    color: #333;
+    font-size: 14px;
+}
+.action{
+    position: fixed;
+    right: 30px;
+    top:20px
+}
+.action .profile{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+}
+.action .profile img{
+    width: 100%;
+    top:0;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    height: 100%;
+}
+.action .menu{
+    background-color:#FFF;
+    box-sizing:0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    right: -10px;
+    width: 200px;
+    transition: 0.5s;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+}
+.action .menu.active{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+.action .menu::before{
+    background-color:#fff;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    transform:rotate(45deg);
+    top:-5px;
+    width: 20px;
+}
+.action .menu h3{
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 20px 0px;
+    text-align: left;
+    width: 100%;
+}
+.action .menu h3 div{
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+}
+.action .menu ul li{
+    align-items: center;
+    border-top:1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 10px 0px;
+}
+.action .menu ul li img{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition:0.5s
+}
+.action .menu ul li a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.action .menu ul li:hover img{
+    opacity: 1;
+}
+.action .menu ul li:hover a{
+    color:#02a302;
+}
+
+
+
+
+
+.site-header {
+    border-bottom: 1px solid rgb(2, 163, 2);
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #02a302;
+}
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: 1em 0;
+    display: inline-block;
+}
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li {
+    display:inline-block;
+    margin: 1.4em 2em 1.4em 0.5em;
+}
+
+.site-navigation li a{
+  font-size: larger;
+  font-family: 'DM Serif Text', serif;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .tabcontent h3 {
+    color: rgb(0, 0, 0);
+  }
+
+  .tabcontent p {
+    color: rgb(0, 0, 0);
+  }
+
+  .tabcontent table td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabcontent table tr {
+    padding-top: 3%;
+  }
+
+  .tabcontent table td {
+    background-color: #02a302;
+  }
+
+  .tabcontent table {
+    border-collapse:separate; 
+    border-spacing: 1em 1em;
+  }
+
+  .container {
+    margin: auto;
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 8px solid;
+    border-color: #02a302;
+    padding: 1rem;
+    background-color: white;
+  } 
+
+  .container p {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .container li {
+    font-size: 20px;
+    color: black;
+  }
+
